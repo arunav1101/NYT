@@ -24,17 +24,15 @@
         <div class="col-md-12 p-2 card">
                 <div class="card-header bg-info text-white">
                         <i class="far fa-newspaper"></i>&nbsp;Search Parameters
-                        </div>
-            
-
-            <form>
+                        </div>          
+            <!-- <form> -->
                     <div class="form-group">
                       <label for="searchTerm">Search Term:</label>
                       <input type="text" class="form-control" id="searchTerm" aria-describedby="searchTerm"  placeholder="search here">
                         </div>
                     <div class="form-group">
                             <label for="pageSize">Number of Records to Select</label>
-                            <select multiple class="form-control" id="pageSize">
+                            <select class="form-control" id="pageSize">
                               <option>1</option>
                               <option>2</option>
                               <option>3</option>
@@ -53,11 +51,11 @@
                         </div>
                     <div class="form-group">
                       <label for="endYear">End Year (Optional)</label>
-                      <input type="text" class="form-control" id="endYear" aria-describedby="endYear" placeholder="YYYY">
+                      <input type="text" class="form-control" id="endYear" aria-describedby="endYear" placeholder="YYYY" >
                         </div>
                     <button type="submit" class="btn btn-light" id="searchButton">Search</button>
                     <button type="submit" class="btn btn-light" id="clear">Clear Results</button>
-                  </form>
+                  <!-- </form> -->
             </div>
     </div>
     
@@ -68,12 +66,13 @@
                 <div class="card-header bg-info text-white">
                         <i class="far fa-newspaper"></i>&nbsp;Top Articles
                 </div>
-                <div class="card-body" id="topArticles"></div>
-          
-
+                <div class="card-body" id="topArticles"></div>       
             </div>
     </div>
 
 </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="logic.js"></script>
 </body>
 </html>
