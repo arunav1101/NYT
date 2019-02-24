@@ -23,7 +23,7 @@
         //     alert("Start year to be 4 digit Year")
         // } else {
 
-        var sYear = $('#startYear').val() || '20000101';
+        var sYear = $('#startYear').val() || '18000101';
         // if (!($('#endYear').val().match('/%d{4}/g'| "/^\s*$/gm" ))) {
         //     alert("End Year to be 4 digit Year");
         // } else {
