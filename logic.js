@@ -1,3 +1,12 @@
+// $(document).ready(function () {
+    $('#clearBtn').on("click", function () {
+        console.log("hello");
+        $("#topArticles").empty();
+        $('#searchTerm').val('');
+        $('#startYear').val('');
+        $('#endYear').val('');
+        $('#pageSize').val('1');
+    });
     $('#searchButton').on("click", function () {
         $("#topArticles").empty();
 
@@ -50,6 +59,11 @@
                        <a target="_blank" href =${element.web_url}>${element.web_url}</a></hr></div>`
                     );
             });
-        });
+        // });
+
+
         // }}}
     });
+
+
+});
