@@ -18,12 +18,12 @@ $('#searchButton').on("click", function () {
         var size = $('#pageSize').val();
         validateYear = $('#startYear').val().match(/[0-9]{4}/g) || $('#startYear').val().match(/^$/g);
 
-        if (!validateYear) alert("Enter 4 digit StartYear ");
+        if (!validateYear || $('#startYear').val().length >4) alert("Enter 4 digit StartYear ");
         else {
             var sYear = $('#startYear').val() || '18000101';
             validateYear = $('#endYear').val().match(/[0-9]{4}/g) || $('#endYear').val().match(/^$/g);
 
-            if (!validateYear) alert("Enter 4 digit End year");
+            if (!validateYear || $('#endYear').val().length >4) alert("Enter 4 digit End year");
             else {
                 var eYear = $('#endYear').val() || '20190101';
                 size = parseInt(size);
